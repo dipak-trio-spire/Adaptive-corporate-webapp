@@ -1,0 +1,324 @@
+body {
+  background-color: #ffffff;
+}
+
+.ProjectionApp {
+  margin-top: 16px;
+  background-color: var(--White);
+  border: 1px solid #ffffff;
+  position: relative;
+  padding-left: 130px;
+
+  @media (max-width:768px) {
+    padding-left: 0px;
+  }
+}
+
+.axisX text {
+  text-anchor: start;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--Primary);
+}
+
+.baseGridLine line {
+  stroke: rgba(255, 255, 255, 0.5);
+}
+
+/* tooltip styles */
+.react-tooltip-lite {
+  background: #333;
+  color: white;
+}
+
+.react-tooltip-lite a {
+  color: #86b0f4;
+  text-decoration: none;
+}
+
+.react-tooltip-lite a:hover {
+  color: #4286f4;
+}
+
+.react-tooltip-lite-arrow {
+  border-color: #333;
+}
+
+/* overrides with a custom class */
+.customTip .react-tooltip-lite {
+  border: 1px solid #888;
+  background: #ccc;
+  color: black;
+}
+
+.customTip .react-tooltip-lite-arrow {
+  border-color: #444;
+  position: relative;
+}
+
+.customTip .react-tooltip-lite-arrow::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 99;
+  display: block;
+}
+
+.customTip .react-tooltip-lite-up-arrow::before {
+  border-top: 10px solid #ccc;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  left: -10px;
+  top: -11px;
+}
+
+.customTip .react-tooltip-lite-down-arrow::before {
+  border-bottom: 10px solid #ccc;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  left: -10px;
+  bottom: -11px;
+}
+
+.customTip .react-tooltip-lite-right-arrow::before {
+  border-right: 10px solid #ccc;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  right: -11px;
+  top: -10px;
+}
+
+.customTip .react-tooltip-lite-left-arrow::before {
+  border-left: 10px solid #ccc;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  left: -11px;
+  top: -10px;
+}
+
+.arrow-content-tooltip .react-tooltip-lite {
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.arrow-content-tooltip .react-tooltip-lite-down-arrow svg {
+  transform: translateY(1px);
+}
+
+.arrow-content-tooltip .react-tooltip-lite-right-arrow svg {
+  transform: rotate(270deg) translateY(-4px) translateX(-4px);
+}
+
+.arrow-content-tooltip .react-tooltip-lite-up-arrow svg {
+  transform: rotate(180deg) translateY(1px);
+}
+
+.arrow-content-tooltip .react-tooltip-lite-left-arrow svg {
+  transform: rotate(90deg) translateY(5px) translateX(4px);
+}
+
+.tooltip {
+  background-color: var(--White);
+}
+
+.contentBackground {
+  background-color: var(--White);
+}
+
+.tooltip text {
+  font-size: 12px;
+  fill: #696969;
+}
+
+.tooltipLine {
+  stroke: var(--Primary);
+  stroke-dasharray: 3px;
+  stroke-width: 1px;
+}
+
+.tooltipContent .contentTitle {
+  font-weight: 700;
+}
+
+.tooltipLinePoint:nth-child(3) {
+  fill: #38BB55;
+}
+
+.tooltipLinePoint:nth-child(4) {
+  fill: #666666;
+}
+
+.tooltipLinePoint:nth-child(5) {
+  fill: var(--Primary);
+}
+
+.tooltipLinePoint:nth-child(6) {
+  fill: #e58b76;
+}
+
+.legendContainer {
+  display: flex;
+  justify-content: center;
+  color: var(--White);
+  padding: 24px 32px 0;
+}
+
+.checkbox {
+  margin: 10px;
+}
+
+.porfoliovaluesline,
+.porfoliovalues {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  border-right: 2px var(--Primary) solid;
+  width: 190px;
+
+  @media (max-width:768px) {
+    width: 62px;
+  }
+}
+
+.porfoliovalues div {
+  color: var(--Navy-Blue);
+  text-align: right;
+  width: 100%;
+  padding-right: 20px;
+
+  @media (max-width:768px) {
+    font-size: 12px;
+  }
+}
+
+.min_val {
+  position: absolute;
+  bottom: 20%;
+}
+
+.porfoliovaluesline {
+  width: 100%;
+  border: none;
+}
+
+.porfoliovaluesline:after {
+  position: absolute;
+  content: "";
+  display: block;
+  border: 1px #666 dashed;
+  width: calc(100% - 220px);
+  right: 30px;
+  bottom: 23%;
+
+  @media (max-width:768px) {
+    width: calc(100% - 100px);
+  }
+}
+
+.porfoliovaluesline:before {
+  position: absolute;
+  content: "";
+  display: block;
+  border: 1px #666 dashed;
+  width: calc(100% - 220px);
+  right: 30px;
+  top: 22%;
+
+  @media (max-width:768px) {
+    width: calc(100% - 100px);
+  }
+}
+
+.start_val {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.chartimg {
+  z-index: 2;
+  position: relative;
+}
+
+.max_val {
+  position: absolute;
+  top: 20%;
+}
+
+.port_val {
+  color: var(--Primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  height: 100%;
+  position: absolute;
+  width: 20px;
+  left: 0;
+
+  @media (max-width:768px) {
+    display: none;
+  }
+}
+
+.port_date {
+  color: var(--Primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  position: absolute;
+  width: calc(100% - 220px);
+  right: 30px;
+  bottom: 0;
+  text-align: center;
+
+  @media (max-width:768px) {
+    width: calc(100% - 90px);
+  }
+}
+
+.port_date:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  background: var(--Primary);
+  width: 100%;
+  left: 0;
+  margin-top: 10px;
+}
+
+.port_val:after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  background: var(--Primary);
+  height: 100%;
+  margin-left: 10px;
+}
+
+.port_val span {
+  transform: rotate(-90deg);
+  display: block;
+  white-space: nowrap;
+  width: 172px;
+  position: absolute;
+  left: -75px;
+  top: 47%;
+  background: #fff;
+  padding: 0 12px;
+}
+
+.port_date span {
+  display: inline-block;
+  white-space: nowrap;
+  background: #fff;
+  padding: 0 12px;
+  z-index: 2;
+  position: relative;
+
+  @media (max-width:768px) {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}

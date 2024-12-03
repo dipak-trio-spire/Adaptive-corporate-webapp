@@ -1,0 +1,85 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-object {
+  position: relative;
+  background: var(--White);
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 460px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.error .heading {
+  background: var(--Error);
+  color: var(--White);
+}
+
+.warning .heading {
+  background: var(--Secondary);
+  color: var(--White);
+}
+
+.heading {
+  width: 100%;
+  background-color: var(--White);
+  display: flex;
+  align-items: center;
+  list-style: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+  height: 50px;
+  font-size: 16px;
+  font-family: Inter;
+  color: #3e4968;
+  letter-spacing: 0.25px;
+  justify-content: center;
+}
+
+.heading .icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: -3px;
+  margin-right: 8px;
+}
+
+.alertType {
+  display: none;
+}
+
+.body-message {
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  width: 100%;
+}
+
+.heading svg {
+  fill: #fff;
+}
+
+.button-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 24px;
+}

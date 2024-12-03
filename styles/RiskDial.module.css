@@ -1,0 +1,341 @@
+#app {
+  width: 350px;
+}
+
+@keyframes RingProgress {
+  0% {
+    stroke-dasharray: 15 100;
+  }
+}
+
+.ActivityRings {
+  height: 100%;
+  width: 100%;
+}
+
+.ActivityRings .ring {
+  transform-origin: 50%;
+}
+
+.ActivityRings .completed {
+  animation: RingProgress 1s ease-in-out forwards;
+  stroke-linecap: round;
+}
+
+.ActivityRings circle {
+  fill: none;
+}
+
+.ring1-green .background {
+  stroke: #ffffff;
+}
+
+.ring1-green .completed {
+  stroke: #38bb55;
+}
+
+.ring1-yellow .background {
+  stroke: #ffffff;
+}
+
+.ring1-yellow .completed {
+  stroke: #ffa654;
+}
+
+.ring1-red .background {
+  stroke: #ffffff;
+}
+
+.ring1-red .completed {
+  stroke: #ed6663;
+}
+
+.ring1-dark-red .background {
+  stroke: #ffffff;
+}
+
+.ring1-dark-red .completed {
+  stroke: #800000;
+}
+
+.ring2-green .background {
+  stroke: #ffffff;
+}
+
+.ring2-green .completed {
+  stroke: #38bb55;
+}
+
+.ring2-yellow .background {
+  stroke: #ffffff;
+}
+
+.ring2-yellow .completed {
+  stroke: #ffa654;
+}
+
+.ring2-red .background {
+  stroke: #ffffff;
+}
+
+.ring2-red .completed {
+  stroke: #ed6663;
+}
+
+.ring2-dark-red .background {
+  stroke: #ffffff;
+}
+
+.ring2-dark-red .completed {
+  stroke: #800000;
+}
+
+.ring3-green .background {
+  stroke: #ffffff;
+}
+
+.ring3-green .completed {
+  stroke: #38bb55;
+}
+
+.ring3-yellow .background {
+  stroke: #ffffff;
+}
+
+.ring3-yellow .completed {
+  stroke: #ffa654;
+}
+
+.ring3-red .background {
+  stroke: #ffffff;
+}
+
+.ring3-red .completed {
+  stroke: #ed6663;
+}
+
+.ring3-dark-red .background {
+  stroke: #ffffff;
+}
+
+.ring3-dark-red .completed {
+  stroke: #800000;
+}
+
+.ring3:hover {
+  cursor: pointer;
+}
+
+.dial_holder {
+  fill: none;
+}
+
+.dial {
+  margin-top: -296px;
+  margin-left: 100px;
+}
+
+.dial img {
+  position: absolute;
+  left: 50%;
+  margin-left: -64px;
+  top: 50%;
+  margin-top: -64px;
+  z-index: 2;
+}
+
+.dail_state {
+  margin-top: -188px;
+  margin-bottom: -46px;
+  margin-left: 43px;
+  transform: scale(1.2);
+  z-index: 0;
+  position: relative;
+}
+
+.dial_holder {
+  width: 128px;
+  fill: white;
+  stroke: black;
+  stroke-width: 0;
+  stroke-linecap: round;
+  margin-left: 13px;
+  margin-top: 40px;
+  filter: drop-shadow(1px 1px 2px #666666);
+}
+
+.dial_holder1 {
+  width: 106px;
+  fill: white;
+  stroke: black;
+  stroke-width: 0;
+  stroke-linecap: round;
+  filter: drop-shadow(1px 1px 2px #666666);
+}
+
+.meter {
+  fill: #ffffff;
+  filter: drop-shadow(1px 1px 2px #666666);
+  stroke-linecap: round;
+  stroke: black;
+  stroke-width: 0px;
+}
+
+.rightLineHolder {
+  margin-left: 215px;
+  margin-top: -4px;
+  position: relative;
+  z-index: 2;
+}
+
+.leftLineHolder {
+  margin-left: 48px;
+  margin-top: -54px;
+  position: relative;
+  z-index: 2;
+}
+
+.Line {
+  stroke: #bababa;
+  stroke-width: 2px;
+}
+
+.marks {
+  transform: translate(20px, 25px);
+  stroke-width: 0.5px;
+}
+
+.marks>line:nth-child(1) {
+  transform: rotate(15deg);
+}
+
+.marks>line:nth-child(2) {
+  transform: rotate(calc(2 * 15deg));
+}
+
+.marks>line:nth-child(3) {
+  transform: rotate(calc(3 * 15deg));
+}
+
+.marks>line:nth-child(9) {
+  transform: rotate(calc(9 * 15deg));
+}
+
+.marks>line:nth-child(10) {
+  transform: rotate(calc(10 * 15deg));
+}
+
+.marks>line:nth-child(11) {
+  transform: rotate(calc(11 * 15deg));
+}
+
+.marks>line:nth-child(12) {
+  transform: rotate(calc(12 * 15deg));
+}
+
+.marks>line:nth-child(13) {
+  transform: rotate(195deg);
+}
+
+.marks>line:nth-child(14) {
+  transform: rotate(calc(14 * 15deg));
+}
+
+.marks>line:nth-child(15) {
+  transform: rotate(calc(15 * 15deg));
+}
+
+.marks>line:nth-child(16) {
+  transform: rotate(calc(16 * 15deg));
+}
+
+.marks>line:nth-child(17) {
+  transform: rotate(calc(17 * 15deg));
+}
+
+.marks>line:nth-child(18) {
+  transform: rotate(calc(18 * 15deg));
+}
+
+.marks>line:nth-child(19) {
+  transform: rotate(calc(19 * 15deg));
+}
+
+.marks>line:nth-child(20) {
+  transform: rotate(calc(20 * 15deg));
+}
+
+.marks>line:nth-child(21) {
+  transform: rotate(calc(21 * 15deg));
+}
+
+.marks>line:nth-child(22) {
+  transform: rotate(calc(22 * 15deg));
+}
+
+.marks>line:nth-child(23) {
+  transform: rotate(calc(23 * 15deg));
+}
+
+.marks>line:nth-child(24) {
+  transform: rotate(calc(24 * 15deg));
+}
+
+.riskLabels {
+  text-align: center;
+  font-size: 9.5px;
+  line-height: 50%;
+  margin-top: -45px;
+  margin-bottom: 36px;
+  color: #666666;
+  z-index: 2;
+  position: relative;
+}
+
+.shieldIcon {
+  left: 50%;
+  margin-left: -64px;
+  top: 50%;
+  margin-top: -64px;
+  z-index: 2;
+}
+
+.riskButtons {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.riskButtons .new_row {
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.riskText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #666666;
+  letter-spacing: 0.289231px;
+}
+
+.riskTextButtons {
+  border-radius: 3px;
+  padding: 5px 8px;
+  width: 85px;
+  height: 35px;
+  text-align: center;
+}
+
+.insideText {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 0px;
+  letter-spacing: 0.289231px;
+  color: var(--White);
+  text-align: center;
+  justify-content: center;
+}

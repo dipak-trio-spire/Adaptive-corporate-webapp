@@ -1,0 +1,213 @@
+.button {
+  width: 155px;
+  height: 50px;
+  line-height: 36px;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--Primary);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+}
+
+.button.secondary {
+  background: var(--Secondary);
+}
+
+.input-type-text-area-sm {
+  width: 100%;
+  border: 1px solid #999;
+  border-radius: 4px;
+  resize: none;
+  overflow: hidden;
+  height: 50px;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.input-type-text-area-lg {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  padding: 8px 16px;
+  font-family: "Overpass", sans-serif;
+  border: 1px solid #666666;
+  border-radius: 5px;
+  resize: none;
+  font-size: 14px;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.popup-object {
+  position: relative;
+  background: var(--White);
+  box-sizing: border-box;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+  width: 460px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.heading {
+  background-color: var(--White);
+  display: flex;
+  align-items: center;
+  list-style: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  box-sizing: border-box;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  height: 60px;
+  padding-left: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: Inter;
+  color: #3e4968;
+  letter-spacing: 0.25px;
+}
+
+.heading .icon {
+  width: 28px;
+  height: 28px;
+  margin-bottom: -3px;
+  margin-right: 8px;
+  box-sizing: "border-box";
+}
+
+.alertType {
+  display: none;
+}
+
+.body-message {
+  padding: 32px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  width: 100%;
+}
+
+.close-button {
+  float: right;
+  background-color: black;
+  color: #ffffff;
+  padding: 6px 10px 6px 10px;
+  border: none;
+  font-size: 100%;
+}
+
+.signupform {
+  display: flex;
+  justify-content: space-between;
+  max-width: 420px;
+  column-gap: 16px;
+  align-items: flex-start;
+}
+
+.signupform>form {
+  width: 100%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 9999;
+}
+
+.pop-up {
+  background-color: white;
+  border: 2px solid black;
+  width: 400px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  position: fixed;
+  padding: 8px 8px 32px;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.tickcon {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -16px;
+}
+
+.tickcon .tick {
+  display: inline-block;
+  width: 64px;
+  opacity: 1;
+}
+
+.popuptext {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 32px;
+  row-gap: 16px;
+  margin-top: 24px;
+}
+
+.userselection {
+  row-gap: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--Black);
+}
+
+.userselection h3,
+.userselection p {
+  margin: 0;
+  text-align: center;
+}
+
+.main-header>input:before {
+  border: 1px solid #e58b76;
+  box-sizing: border-box;
+}
+
+.invalidMessage {
+  font-size: 14px;
+  color: #fe0006 !important;
+  margin: 0;
+}
+
+.divlast {
+  display: flex;
+  column-gap: 48px;
+}

@@ -1,0 +1,29 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/bitnami/corporate-webapp
+
+permissions:
+  - object: /home/bitnami/corporate-webapp
+    owner: bitnami
+    mode: 777
+
+hooks:
+  AfterInstall:
+    - location: scripts/owner_change.sh
+      runas: bitnami
+      debug: true
+    - location: scripts/apache_config.sh
+      runas: bitnami
+      debug: true
+    - location: scripts/process_changes.sh
+      runas: bitnami
+      debug: true
+    - location: scripts/start_deployment.sh
+      runas: bitnami
+      debug: true
+  ApplicationStart:
+    - location: scripts/application_start.sh
+      runas: bitnami
+      debug: true

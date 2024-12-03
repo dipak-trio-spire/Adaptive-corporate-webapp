@@ -1,0 +1,460 @@
+.riskButtons .new_row {
+    display: flex;
+}
+
+.input-gray {
+    background: #f1f1f1;
+    margin-top: 10px;
+    padding: 16px;
+    border-radius: 4px;
+    border: none;
+    color: var(--Black);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-gray.input-value {
+    background: none;
+    font-size: 18px;
+    padding: 12px 0;
+    font-weight: 600;
+    color: var(--Primary);
+}
+
+.inputs>div {
+    width: calc(18% - 26px);
+    min-width: 200px;
+}
+
+.inputs>div.buttonbuy {
+    min-width: 240px;
+    display: block;
+    flex-direction: column;
+    align-content: flex-start;
+    flex: 1;
+}
+
+.inputs>div.buttonbuy button {
+    padding: 12px 16px;
+    margin-top: 32px;
+    justify-content: center;
+    margin-bottom: 8px;
+    width: auto;
+}
+
+.inputs>div.buttonbuy p {
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    .inputs>div {
+        width: 100%;
+    }
+}
+
+.inputs>div.big {
+    width: calc(23% - 26px);
+    min-width: 275px;
+}
+
+@media (max-width: 480px) {
+    .inputs>div.big {
+        width: 100%;
+    }
+}
+
+.inputs label {
+    color: var(--Primary);
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    column-gap: 8px;
+}
+
+.pb0 {
+    padding-bottom: 0 !important;
+}
+
+.pt0 {
+    padding-top: 0 !important;
+}
+
+.align-center {
+    justify-content: center;
+}
+
+.riskButtons {
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column !important;
+}
+
+.projectedvalue {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+}
+
+.body-message p {
+    color: var(--Black);
+}
+
+.body-message {
+    padding: 16px 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+    float: left;
+    margin-top: 44px;
+    background: none;
+}
+
+.heading span {
+    flex: 1;
+}
+
+.sectiondivide.tablepart {
+    align-items: flex-start;
+    column-gap: 48px;
+}
+
+.sectiondivide.tables {
+    align-items: normal;
+    padding-bottom: 10px !important;
+}
+
+.ai-guaranteed-table,
+.ai-affordable-table {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+}
+
+.ai-guaranteed-results .ai-static-content,
+.ai-affordable-results .ai-static-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    /* display: none; */
+}
+
+.ai-guaranteed-results .ai-header,
+.ai-affordable-results .ai-header {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 0 12px 0;
+    text-align: center;
+    color: var(--Primary);
+    text-transform: uppercase;
+}
+
+.ai-guaranteed-results .ai-header span,
+.ai-affordable-results .ai-header span {
+    text-transform: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 8px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-style: italic;
+}
+
+.ai-guaranteed-results .ai-helpText,
+.ai-affordable-results .ai-helpText {
+    margin: 0;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.32);
+    text-align: center;
+}
+
+.ai-guaranteed-table .ai-card-header,
+.ai-affordable-table .ai-card-header {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4;
+}
+
+.ai-guaranteed-table .ai-card-header h4,
+.ai-affordable-table .ai-card-header h4 {
+    display: inline-block;
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--Primary);
+    position: relative;
+    width: fit-content;
+}
+
+.ai-affordable-table .ai-card-header h4 {
+    color: var(--Secondary);
+}
+
+.ai-guaranteed-table .ai-card-header h4:after,
+.ai-affordable-table .ai-card-header h4:after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--Primary);
+    opacity: 0.6;
+}
+
+.ai-guaranteed-table .ai-card-header p,
+.ai-affordable-table .ai-card-header p {
+    margin: 4px 0 0 0;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.ai-selfassembly-table {
+    background: var(--White);
+    display: flex;
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+}
+
+.ai-selfassembly-table table {
+    width: 100%;
+    border-collapse: collapse;
+    height: fit-content;
+}
+
+.ai-selfassembly-table table thead tr th {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--Primary);
+    font-family: "Inter";
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.ai-selfassembly-table table tbody {
+    overflow-y: auto;
+}
+
+.ai-selfassembly-table table tbody::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--Peach);
+    border-radius: 8px;
+    box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.54);
+    margin-left: 8px;
+}
+
+.ai-selfassembly-table table tbody::-webkit-scrollbar-thumb {
+    background-color: var(--Primary);
+    border-radius: 8px;
+}
+
+.ai-selfassembly-table table tbody tr td {
+    color: #5b5b5b;
+    font-size: 14px;
+}
+
+.ai-selfassembly-table table thead tr th,
+.ai-selfassembly-table table tbody tr td {
+    text-align: right;
+    padding: 16px;
+    white-space: nowrap;
+}
+
+.ai-selfassembly-table table tbody tr:nth-child(2n + 1) {
+    background: #fafafa;
+}
+
+.ai-selfassembly-table table thead tr th:nth-child(1),
+.ai-selfassembly-table table tbody tr td:nth-child(1) {
+    font-weight: 700;
+    color: var(--Primary);
+}
+
+.ai-selfassembly-table table thead tr th:nth-child(1),
+.ai-selfassembly-table table tbody tr td:nth-child(1),
+.ai-selfassembly-table table thead tr th:nth-child(2),
+.ai-selfassembly-table table tbody tr td:nth-child(2) {
+    text-align: left;
+}
+
+.ai-selfassembly-table table tbody tr td:nth-child(2) {
+    font-family: "Inter";
+    font-weight: 700;
+}
+
+.ai-guaranteed-results {
+    background-color: var(--Bgprimary);
+}
+
+.ai-selfassembly-cost {
+    display: flex;
+    padding: 8px 16px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: var(--Navy-Blue);
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 70px;
+}
+
+.ai-selfassembly-cost p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.ai-selfassembly-cost .info {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.ai-guaranteed-results,
+.ai-affordable-results {
+    display: flex;
+    border-radius: 4px;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ai-guaranteed-results .selfassambly-body,
+.ai-affordable-results .selfassambly-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.ai-affordable-results {
+    background-color: var(--Bgsecondary);
+}
+
+.getalerts {
+    background: var(--Primary);
+    padding: 24px;
+    color: var(--White);
+    border-radius: 8px;
+    display: flex;
+    column-gap: 40px;
+}
+
+@media (max-width: 992px) {
+    .getalerts {
+        flex-wrap: wrap;
+    }
+}
+
+.getalerts .input-type-text-area-sm {
+    min-width: 300px;
+}
+
+@media (max-width: 480px) {
+    .getalerts .input-type-text-area-sm {
+        min-width: 0px;
+        width: 100%;
+    }
+}
+
+.getalerts .button {
+    width: auto;
+    background: var(--Secondary);
+}
+
+.getalerts h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.aftermark {
+    padding-top: 16px;
+    padding-bottom: 0;
+}
+
+.aftermark .weatherstat.warning {
+    margin: 0;
+    padding: 0;
+}
+
+.aftermark .weatherstat.warning p {
+    margin: 0;
+}
+
+.portfolioinp {
+    text-align: left;
+    padding: 16px 8px;
+    width: 100%;
+}
+
+.portfolioinp table {
+    width: 100%;
+}
+
+.portfolioinp td,
+.portfolioinp th {
+    padding: 0 8px;
+}
+
+.portfolioinp td.bigth,
+.portfolioinp th.bigth {
+    min-width: 400px;
+}
+
+.portfolioinp input {
+    padding: 12px 16px;
+}
+
+.portfolioinp tfoot td {
+    padding: 16px 8px 0;
+}
+
+.portfolioinp .ai-btn {
+    display: inline-block;
+}
+
+.portfolioinp .infowarning {
+    background: var(--Bgsecondary);
+    display: inline-block;
+    margin-left: 16px;
+    padding: 8px 16px;
+}
+
+.portfolioinp .infowarning img {
+    margin-right: 8px;
+}
+
+.inpinfo {
+    color: var(--Grey);
+    font-size: 14px;
+    padding-top: 4px;
+    display: inline-block;
+}
+
+.ai-affordable-results .ai-guaranteed-table .ai-card-header h4 {
+    color: var(--Secondary);
+}
+
+.price-Guaranteed {
+    color: var(--Secondary);
+    font-weight: bold;
+}
+
+.price-Market {
+    color: var(--Primary);
+    font-weight: bold;
+}
+
+.text-big {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.text-c {
+    text-align: center;
+}

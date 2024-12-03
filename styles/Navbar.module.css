@@ -1,0 +1,146 @@
+.logo-nav {
+  max-width: 100%;
+  max-height: 44px;
+  display: block;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.navwrap {
+  display: flex;
+  width: 100%;
+  column-gap: 32px;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbarmenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  column-gap: 32px;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+}
+
+.navbarmenu a {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--Black);
+  text-decoration: none;
+}
+
+a.navtoggle {
+  width: 40px;
+  height: 40px;
+  padding: 10px 5px;
+  display: none;
+}
+
+a.navtoggle span {
+  width: 30px;
+  background: #000;
+  display: inline-block;
+  height: 2px;
+  float: left;
+}
+
+a.navtoggle span:nth-child(2) {
+  margin: 8px 0;
+}
+
+a.navtoggle span .navbarmenu a.button.secondary {
+  background: var(--Secondary);
+}
+
+ul.navbarmenu>li {
+  position: relative;
+  display: inline-block;
+}
+
+ul.navbarmenu>li.navbutton {
+  display: flex;
+  column-gap: 16px;
+}
+
+ul.navbarmenu>li a {
+  padding: 16px;
+  display: inline-block;
+}
+
+ul.navbarmenu>li a:hover {
+  background: var(--);
+}
+
+ul.submenu {
+  position: absolute;
+  list-style: none;
+  display: none;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  width: 260px;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  border-top: 2px var(--Primary) solid;
+  z-index: 999;
+}
+
+ul.navbarmenu>li:hover ul.submenu {
+  display: flex;
+}
+
+@media (max-width: 1140px) {
+  .navbarmenu {
+    column-gap: 24px;
+  }
+}
+
+@media (max-width: 960px) {
+  .navwrap {
+    background: var(--Peach);
+    position: fixed;
+    z-index: 99;
+  }
+
+  ul.navbarmenu {
+    background: var(--Navy-Blue);
+    display: none;
+    flex-direction: column;
+    height: auto;
+    left: 0;
+    padding: 16px 48px;
+    position: fixed;
+    top: 76px;
+    width: 100%;
+    z-index: 999;
+  }
+
+  ul.navbarmenu>li {
+    text-align: center;
+  }
+
+  .navbarmenu a {
+    color: var(--White);
+    display: inline-block;
+    font-size: 16px;
+    padding: 24px;
+  }
+
+  ul.submenu {
+    background: none;
+    box-shadow: 0 0 0 transparent;
+    margin-bottom: 16px;
+    position: static;
+  }
+}

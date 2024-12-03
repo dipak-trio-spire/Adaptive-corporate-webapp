@@ -1,0 +1,25 @@
+const tooltipContent = {
+    "Model Portfolio": "Pick a pre defined model portfolio.",
+    "Portfolio Value": "Enter the value of the portfolio in dollars.",
+    "QUANTITY": "Number of shares held for each stock",
+    "CLOSING PRICE": "Price of a security at the EOD previous market close",
+    "MARKET VALUE": "Market value of each security based on last price",
+    "Simulation Length": "Select how long you want to simulate repeated Shield Protection for.",
+    "Protection Period": "How long each repeating Portfolio Shield should last for.",
+    "Protection level": "What level of portfolio value each repeating Portfolio Shield should protect.",
+    "Number of Paths": "The number of forward test analyzed to present a realistic picture of what would happen in aggregate.",
+    "Portfolio with Portfolio Shield": "Simulated outcomes for the selected portfolio, when using the Portfolio Shield.",
+    "Portfolio without Portfolio Shield": "Simulated outcomes for the selected portfolio, unprotected i.e. NOT using the Portfolio Shield.",
+    "Portfolio Return": "The portfolio with Portfolio Shield will be protected from severe market downturns because protection is in place.The portfolio with Portfolio Shield will still benefit from stock market gains (less the cost of the Shield).",
+    "Relative Performance": "The portfolio with Portfolio Shield will be protected from severe market downturns because protection is in place.The portfolio with Portfolio Shield will still benefit from stock market gains (less the cost of the Shield).",
+    "Portfolio Risk Halo": "Portfolio Risk is the annualized daily historical volatility of the portfolio over the last five years, which can be compared with the historical volatility of the S&P 500 market index.",
+    "SP500 Risk Halo": "S&P 500 Risk is the annualized daily historical volatility of the market index over the last five years, as indicated by the light blue horizontal line.",
+    "Risk Contribution Halo": "Risk Contribution measures how much of the portfolio's risk is coming from a single position, including benefits from portfolio diversification",
+    "Standalone Risk Halo": "Standalone Risk is the annualized daily historical volatility of a particular  stock (or ETF) over the last five years.",
+    "Portfolio Risk": "Downside volatility of a portfolio as implied by options markets.",
+    "Risk Contribution": "Percentage of total portfolio risk attributable to individual holdings.",
+    "Position Risk" : "Downside volatility of an individual holding as implied by option prices.",
+    "VIX": "Broad measure of market risk.<br/><a href='https://www.investopedia.com/terms/v/vix.asp' target='_blank' style=text-decoration:none;color:#54C1FF;font-size:14px;font-weight:700;'>Learn more.</a>",
+};
+
+export default tooltipContent;

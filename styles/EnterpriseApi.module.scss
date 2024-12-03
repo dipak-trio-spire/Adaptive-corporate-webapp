@@ -1,0 +1,222 @@
+.pt20 {
+    padding-top: 20px !important;
+}
+
+.apisection {
+    column-gap: 48px;
+    row-gap: 48px;
+    align-items: flex-start;
+
+    @media(max-width:1280px) {
+        flex-wrap: wrap;
+    }
+
+    .apilist {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        padding: 16px;
+        // padding-right: 32px;
+        // border-right: 1px var(--Bgprimary) solid;
+        background: var(--White);
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+
+        @media(max-width:1280px) {
+            width: 100%;
+            max-width: 100%;
+            flex-direction: row;
+        }
+
+        @media(max-width:1280px) {
+            flex-direction: column;
+        }
+
+        .tablist {
+            padding: 12px 16px 8px;
+            color: var(--Gray);
+            border-radius: 4px;
+            width: 280px;
+            cursor: pointer;
+
+            @media(max-width:1280px) {
+                width: auto;
+            }
+
+            &.active {
+                background: var(--Bgprimary);
+                color: var(--Primary);
+            }
+        }
+    }
+
+    .apidata {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+
+        @media(max-width:1280px) {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .collapse {
+            h4 {
+                padding: 8px 16px;
+
+                span {
+                    float: right
+                }
+            }
+        }
+
+        .portfoliolbl {
+            display: flex;
+            align-items: center;
+
+            label {
+                width: 240px;
+            }
+
+            .input-gray {
+
+                margin: 0;
+            }
+        }
+
+        .portfoliodata {
+            margin: 0;
+        }
+
+        .error-message {
+            margin: 0;
+            padding: 8px 0 0;
+        }
+    }
+
+    .apioutput {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        row-gap: 32px;
+
+        .code {
+            width: 100%;
+            min-height: 220px;
+            background: var(--Bgsecondary);
+            border-radius: 8px;
+            padding: 16px 16px 64px;
+            position: relative;
+            row-gap: 8px;
+            display: flex;
+            flex-direction: column;
+
+            @media(max-width:1280px) {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            label {
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--Primary);
+            }
+
+            button {
+                position: absolute;
+                right: 16px;
+                bottom: 16px;
+            }
+
+            pre {
+                display: block;
+                width: 100%;
+                height: auto;
+                flex: 1;
+                overflow: auto;
+                font-family: "Overpass", sans-serif;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+
+        @media(max-width:1280px) {
+            max-width: 100%;
+            width: 100%;
+            column-gap: 32px;
+        }
+
+        // @media(max-width:992px) {
+        //     width: 100%;
+        //     flex: auto;
+        //     max-width: 100%;
+        //     flex-direction: row;
+        //     column-gap: 32px;
+        // }
+
+        @media(max-width:500px) {
+            flex-direction: column;
+        }
+    }
+}
+
+.apipop {
+    h1 {
+        font-size: 20px;
+        margin: 0;
+        text-align: center;
+    }
+
+    p {
+        margin: 0;
+        text-align: center;
+    }
+
+    .pop-up-text {
+        margin-top: 16px;
+    }
+}
+
+.inputcon {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    width: 100%;
+
+    .input-gray {
+        margin: 0;
+    }
+
+    .error-message {
+        padding: 0 !important;
+    }
+}
+
+.ovauto {
+    overflow: auto;
+    width: 100%;
+}
+
+.tikerdata {
+    tbody {
+        tr {
+            &:first-child {
+                .removeticker {
+                    display: none;
+                }
+            }
+
+            .removeticker {
+                display: inline-block;
+                cursor: pointer;
+                padding: 8px;
+
+                img {
+                    float: left;
+                }
+
+            }
+        }
+    }
+}

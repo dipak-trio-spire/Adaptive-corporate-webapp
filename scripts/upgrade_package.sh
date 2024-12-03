@@ -1,0 +1,1 @@
+sh -x /home/bitnami/corporate-webapp/scripts/application_start.sh

@@ -1,0 +1,63 @@
+/* body {
+  background-color: #ffffff;
+} */
+
+.App {
+  width: 100%;
+  background-color: var(--White);
+  border: 1px solid #ffffff;
+}
+
+.axisX text {
+  text-anchor: start;
+  color: #696969;
+}
+
+.baseGridLine line {
+  stroke: rgba(255, 255, 255, 0.5);
+}
+
+.tooltip {
+  background-color: var(--White);
+}
+
+.contentBackground {
+  background-color: var(--White);
+}
+
+.tooltip text {
+  font-size: 12px;
+  fill: #696969;
+}
+
+.tooltipLine {
+  stroke: var(--Primary);
+  stroke-dasharray: 3px;
+  stroke-width: 1px;
+}
+
+.tooltipLinePoint:nth-child(3) {
+  fill: #38BB55;
+}
+
+.tooltipLinePoint:nth-child(4) {
+  fill: #666666;
+}
+
+.tooltipLinePoint:nth-child(5) {
+  fill: var(--Primary);
+}
+
+.tooltipLinePoint:nth-child(6) {
+  fill: #e58b76;
+}
+
+.legendContainer {
+  display: flex;
+  justify-content: flex-start;
+  color: var(--White);
+}
+
+.checkbox {
+  margin: 10px;
+}

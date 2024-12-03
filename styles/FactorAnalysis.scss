@@ -1,0 +1,189 @@
+.factoranalysis {
+    justify-content: flex-start;
+}
+
+.factorexposure {
+    display: flex;
+    width: 100%;
+    padding: 24px 32px;
+    column-gap: 32px;
+    row-gap: 32px;
+    flex-wrap: wrap;
+
+    .contributio-table {
+        width: 50%;
+        padding: 0;
+
+        @media (max-width:992px) {
+            width: 100%;
+        }
+
+        .table_holder {
+            margin: 0;
+            flex: 1;
+
+            h3 {
+                font-size: 16px;
+            }
+
+            .table_height {
+                flex: 1;
+            }
+        }
+    }
+
+    .portriskgrid {
+        width: 50%;
+        border-radius: 8px;
+        overflow: hidden;
+
+        @media (max-width:992px) {
+            width: 100%;
+        }
+
+
+        h3 {
+            background: var(--bg-secondary);
+            margin: 0;
+            padding: 16px;
+            color: var(--Primary);
+            cursor: pointer;
+            font-size: 18px;
+
+            span {
+                float: right;
+            }
+        }
+
+        .errorgrid {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 24px;
+            border: 1px var(--bg-gray) solid;
+            column-gap: 32px;
+            row-gap: 32px;
+            justify-content: center;
+
+            .trackingerror {
+                text-align: center;
+
+                h3 {
+                    background: none;
+                    margin-bottom: 8px;
+                }
+
+                h4 {
+                    font-size: 14px;
+                    color: var(--Black);
+                    margin: 0;
+                    text-align: left;
+                    width: 120px;
+                }
+
+                p {
+                    font-size: 22px;
+                    color: var(--Primary);
+                    font-weight: 600;
+                    margin: 0;
+                    padding-bottom: 8px;
+                    border-bottom: 1px var(--bg-primary) solid;
+                }
+
+                h5 {
+                    font-size: 14px;
+                    color: var(--Primary);
+                    margin-top: 8px;
+                }
+
+                .tag {
+                    color: var(--White);
+                    padding: 4px;
+                    border-radius: 4px;
+                    display: inline-block;
+                    width: 60px;
+                    text-align: center;
+                    font-size: 14px;
+
+                    &.primary {
+                        background: var(--Primary);
+                    }
+
+                    &.secondary {
+                        background: var(--Secondary);
+                    }
+
+                    &.gray {
+                        background: var(--Grey);
+                    }
+                }
+
+                .errolist {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 8px;
+                    margin-top: 16px;
+
+                    .tagspan {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nogap {
+    .table_holder {
+        margin: 0;
+    }
+}
+
+.factoranalysis {
+    .factortbl {
+        flex: none;
+
+        .subnavbar-menu {
+            flex: none;
+            max-height: 60px;
+        }
+
+        .table_holder {
+            flex: none;
+            height: auto;
+        }
+    }
+}
+
+.tabheader {
+    background: var(--bg-primary);
+    margin: 0;
+    padding: 0 16px;
+    color: var(--Primary);
+    cursor: pointer;
+    font-size: 18px;
+
+    .subnavbar-menu {
+        flex: none;
+        float: left;
+        height: auto;
+
+        .SUBITEM,
+        .SUBITEM-selected {
+            padding: 15px;
+        }
+    }
+
+    span {
+        float: right;
+        padding: 16px 0;
+    }
+}
+
+.factortbl1 th:nth-child(2),
+.factortbl1 td:nth-child(2),
+.factortbl1 th:nth-child(3),
+.factortbl1 td:nth-child(3),
+.factortbl1 th:nth-child(4),
+.factortbl1 td:nth-child(4) {
+    text-align: right !important;
+}

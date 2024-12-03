@@ -1,0 +1,56 @@
+.riskchart {
+    margin: 20px 0;
+    max-height: 500px;
+    position: relative;
+    padding: 0 24px;
+}
+
+.p0i {
+    padding: 0;
+}
+
+.pt0i {
+    padding-top: 0 !important;
+}
+
+.table_head.risk {
+    margin-top: -50px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.chartlbl {
+    position: absolute;
+    top: 50%;
+    transform: rotate(-90deg);
+    width: 137px;
+    height: 16px;
+    text-align: center;
+    color: var(--Primary);
+    font-weight: 600;
+    margin-top: -40px;
+
+    &.left {
+        left: -55px;
+    }
+
+    &.right {
+        right: -55px;
+    }
+}
+
+// .riskcont {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+//make the gridlines visible
+.risk-contribution-table .portfolio-table th {
+    white-space: normal; 
+}
+
+.risk-contribution-table .portfolio-table th:last-child {
+    text-align: left;
+}

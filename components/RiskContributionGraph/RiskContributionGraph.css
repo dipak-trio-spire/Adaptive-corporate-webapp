@@ -1,0 +1,13 @@
+
+.y-axis .domain {
+    stroke: none;
+}
+
+.grid path {
+    stroke-width: 0;
+}
+
+.grid .tick {
+    stroke: white;
+    opacity: 0.7;
+}
