@@ -28,6 +28,7 @@ export default function WhatWeServePage() { // Renamed from index to WhatWeServe
   }, [slug]);
 
   return (
+    
     <>
       {currentPage}
     </>
